@@ -1,0 +1,5 @@
+body {
+  height: 100vh; /* Make the body fill the entire viewport height */
+  margin: 0; /* Remove default margin */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport height */
+}

@@ -1,0 +1,92 @@
+.Navbar {
+
+  display: flex;
+ position: sticky;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0c45f1;
+}
+
+.navleft {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  max-width: max-content;
+  width: 100%;
+  color: #080707;
+  padding: 8px 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Example border style */
+  border-radius: 5px; /* Example border radius */
+}
+.search input:focus {
+  outline: none;
+}
+
+.search ::placeholder {
+  color: #080707;
+  font-size: 15px;
+}
+
+.cart {
+  margin-right: 25px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navleft,
+  .menu,
+  .cart {
+    margin: 10px 0;
+  }
+
+  .search {
+    margin-bottom: 10px;
+  }
+  .search input {
+    width: 80%; /* Adjust the width for smaller screens */
+    max-width: none; /* Allow the input field to expand beyond the maximum width */
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu1 {
+  font-size: 20px;
+}
+.menuContainer {
+  position: relative;
+}
+.logo{
+  font-size: 40px;
+  font-weight:900;
+  font-style: italic;
+  background: linear-gradient(to right, red , yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; 
+}
+
